@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: ToDo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style/todo.css">
+  <script defer src="./js/todo.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/favicon_io/site.webmanifest">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">My to-do list:</h1>
+  </header>
+  <section class="list">
+    <form class="form">
+      <input class="form__input" maxlength="20" type="text" id="newTask" name="fname" placeholder="Write something!">
+      <input class="form__submit" type="submit" id="submitButton" value="ADD">
+    </form>
+    <div class="tasks" id="tasks">
+      <div class="tasks__title pending">To do:</div>
+      <div class="tasks__title finished">Finished:</div>
+      <div class="task__erase erase-button" onclick="emptyState()">Delete browser storage</div>
+    </div>
+  </section>
+  <div class="storage">
+    <img class="storage__svg" src="images/storage.svg">
+    <div class="storage__text" id="clearStorage">Click me to delete browser storage!</div>
+  </div>
+  <div class="footer-right">
+    <img class="footer-right__svg" src="images/bottom.svg">
+    <div class="footer-right__text">&copy; Copyright 2020 Martin Østvik</div>
+  </div>
+  <footer class="footer">
+    <p class="footer__text">&copy; Copyright 2020 Martin Østvik</p>
+  </footer>
+  
+</body>
+
+</html>
